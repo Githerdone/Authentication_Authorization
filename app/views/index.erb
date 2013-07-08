@@ -1,0 +1,14 @@
+<div class="container">
+
+
+  <ol>
+    <% if current_user %>
+    <p>Current Users...</p>
+      <% @all_users.each do |i| %>
+        <li><%= i.name %></li>
+      <%end%>
+  </ol>
+    <% else %>
+      <%= '<h1>Welcome</h1>' %>
+    <%end%>
+</div>
